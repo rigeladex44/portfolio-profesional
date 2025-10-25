@@ -352,7 +352,7 @@ progressBar.style.cssText = `
     left: 0;
     width: 0%;
     height: 3px;
-    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    background: linear-gradient(90deg, #000000, #333333);
     z-index: 10001;
     transition: width 0.1s ease;
 `;
@@ -377,7 +377,7 @@ function createThemeToggle() {
         height: 50px;
         border-radius: 50%;
         border: none;
-        background: #2563eb;
+        background: #000000;
         color: white;
         font-size: 1.2rem;
         cursor: pointer;
