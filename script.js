@@ -257,8 +257,27 @@ if (statsSection) {
     statsObserver.observe(statsSection);
 }
 
-// Add loading animation
-window.addEventListener('load', () => {
+// Theme persistence
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.body.classList.add('dark-theme');
+    }
+    
+    // Update theme toggle icon after a short delay to ensure it's created
+    setTimeout(() => {
+        const themeToggle = document.querySelector('.theme-toggle');
+        if (themeToggle) {
+            const isDark = document.body.classList.contains('dark-theme');
+            themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        }
+    }, 100);
+}
+
+// Initialize theme on page load
+document.addEventListener('DOMContentLoaded', initTheme);
     document.body.classList.add('loaded');
     
     // Add loaded class styles
@@ -371,10 +390,13 @@ function createThemeToggle() {
         document.body.classList.toggle('dark-theme');
         const isDark = document.body.classList.contains('dark-theme');
         themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        
+        // Save theme preference
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
     });
     
     document.body.appendChild(themeToggle);
 }
 
 // Uncomment the line below to enable theme toggle
-// createThemeToggle();
+createThemeToggle();
