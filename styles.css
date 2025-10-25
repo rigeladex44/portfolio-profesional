@@ -731,17 +731,17 @@ section {
 
 /* Dark Theme Styles */
 body.dark-theme {
-    background-color: #0f172a;
-    color: #e2e8f0;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 body.dark-theme .navbar {
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(0, 0, 0, 0.95);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 body.dark-theme .nav-link {
-    color: #e2e8f0;
+    color: #ffffff;
 }
 
 body.dark-theme .nav-link:hover {
@@ -753,32 +753,33 @@ body.dark-theme .nav-link::after {
 }
 
 body.dark-theme .hero {
-    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
 }
 
 body.dark-theme .about {
-    background-color: #1e293b;
+    background-color: #111111;
 }
 
 body.dark-theme .section-title {
-    color: #f1f5f9;
+    color: #ffffff;
 }
 
 body.dark-theme .section-subtitle {
-    color: #94a3b8;
+    color: #cccccc;
 }
 
 body.dark-theme .about-text h3 {
-    color: #f1f5f9;
+    color: #ffffff;
 }
 
 body.dark-theme .about-text p {
-    color: #94a3b8;
+    color: #cccccc;
 }
 
 body.dark-theme .stat {
-    background: #334155;
-    color: #e2e8f0;
+    background: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #333333;
 }
 
 body.dark-theme .stat h4 {
@@ -786,26 +787,29 @@ body.dark-theme .stat h4 {
 }
 
 body.dark-theme .stat p {
-    color: #94a3b8;
+    color: #cccccc;
 }
 
 body.dark-theme .skill-category {
-    background: #334155;
-    color: #e2e8f0;
+    background: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #333333;
 }
 
 body.dark-theme .skill-category h3 {
-    color: #f1f5f9;
+    color: #ffffff;
 }
 
 body.dark-theme .skill-item {
-    background: #475569;
-    color: #e2e8f0;
+    background: #222222;
+    color: #ffffff;
+    border: 1px solid #333333;
 }
 
 body.dark-theme .skill-item:hover {
     background: #3b82f6;
     color: white;
+    border-color: #3b82f6;
 }
 
 body.dark-theme .skill-item i {
@@ -817,25 +821,27 @@ body.dark-theme .skill-item:hover i {
 }
 
 body.dark-theme .projects {
-    background-color: #1e293b;
+    background-color: #111111;
 }
 
 body.dark-theme .project-card {
-    background: #334155;
-    color: #e2e8f0;
+    background: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #333333;
 }
 
 body.dark-theme .project-content h3 {
-    color: #f1f5f9;
+    color: #ffffff;
 }
 
 body.dark-theme .project-content p {
-    color: #94a3b8;
+    color: #cccccc;
 }
 
 body.dark-theme .project-tech span {
-    background: #475569;
-    color: #e2e8f0;
+    background: #222222;
+    color: #ffffff;
+    border: 1px solid #333333;
 }
 
 body.dark-theme .project-link {
@@ -847,19 +853,19 @@ body.dark-theme .project-link:hover {
 }
 
 body.dark-theme .contact-info h3 {
-    color: #f1f5f9;
+    color: #ffffff;
 }
 
 body.dark-theme .contact-info p {
-    color: #94a3b8;
+    color: #cccccc;
 }
 
 body.dark-theme .contact-method h4 {
-    color: #f1f5f9;
+    color: #ffffff;
 }
 
 body.dark-theme .contact-method p {
-    color: #94a3b8;
+    color: #cccccc;
 }
 
 body.dark-theme .contact-method i {
@@ -868,25 +874,28 @@ body.dark-theme .contact-method i {
 }
 
 body.dark-theme .social-link {
-    background: #475569;
-    color: #94a3b8;
+    background: #222222;
+    color: #cccccc;
+    border: 1px solid #333333;
 }
 
 body.dark-theme .social-link:hover {
     background: #3b82f6;
     color: white;
+    border-color: #3b82f6;
 }
 
 body.dark-theme .contact-form {
-    background: #334155;
-    color: #e2e8f0;
+    background: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #333333;
 }
 
 body.dark-theme .form-group input,
 body.dark-theme .form-group textarea {
-    background: #475569;
-    border: 2px solid #64748b;
-    color: #e2e8f0;
+    background: #222222;
+    border: 2px solid #333333;
+    color: #ffffff;
 }
 
 body.dark-theme .form-group input:focus,
@@ -896,12 +905,12 @@ body.dark-theme .form-group textarea:focus {
 
 body.dark-theme .form-group input::placeholder,
 body.dark-theme .form-group textarea::placeholder {
-    color: #94a3b8;
+    color: #999999;
 }
 
 body.dark-theme .footer {
-    background: #0f172a;
-    color: #94a3b8;
+    background: #000000;
+    color: #cccccc;
 }
 
 /* Theme Toggle Button */
